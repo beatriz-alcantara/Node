@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+  font-family: Raleway;
+  src: url('Raleway/Raleway-Thin.ttf');
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: grid;
+  grid-template-rows: 8vh 22vh 55vh 15vh ;
+  grid-template-areas: 'nav nav' 'header header' 'section aside' 'footer footer';
+}
+
+nav{
+  grid-area: nav;
+  background-color: rgb(64, 64, 64);
+}
+
+
+header{
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+
+section{
+  grid-area: section;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Open Sans';
+}
+
+section > h2{
+  margin-left: 2vw;
+}
+
+section > p{
+  margin: 3vh 2vw 0 2vw;
+}
+
+aside{
+  grid-area: aside;
+  background-color: violet;
+}
+aside > img{
+  width: 550px;
+  height: 360px;
+}
+footer{
+  grid-area: footer;
+  background-color: rgb(200, 200, 200);
+}
+
+a > img{
+  width: 30px;
+  height: 30px;
+  margin: 0 5vw 0 5vw;
+}
+.logos{
+  margin: 5vh 0 0 25vw;
+}
+footer > p{
+  margin: 1vh 0 0 40vw;
+  font-family: 'Open Sans';
+}
+ul{
+  margin-top: 3vh;
+}
+
+nav > h2{
+  position: absolute;
+  top: 2vh;
+  font-family: Raleway;
+  color: white;
+  margin-left: 2vw;
+  z-index: 1;
+}
+
+li{
+  display: inline;
+  margin: 0 2vw 0 2vw;
+}
+
+li > a{
+  text-decoration: none;
+  font-family: Raleway;
+  color: rgb(255, 255, 255);
+}
